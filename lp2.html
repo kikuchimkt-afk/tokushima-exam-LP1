@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基礎学テストで差がつく！ | ECCベストワン藍住校</title>
+    <meta name="description" content="徳島県の高校入試は基礎学テストがカギ。中1・中2の今から始める対策で、志望校合格をつかもう。ECCベストワン藍住校。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2d6a4f;
+            --primary-light: #40916c;
+            --primary-bg: #f0faf4;
+            --accent: #e76f51;
+            --accent-hover: #d35f44;
+            --warm: #f4a261;
+            --text: #2c3e50;
+            --sub: #64748b;
+            --bg: #fafbfc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+            --radius: 16px;
+            --shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.9;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+            padding: 10px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-cta {
+            background: var(--accent);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .header-cta:hover {
+            background: var(--accent-hover);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #e8f5e9 0%, #fff8e1 50%, #fce4ec 100%);
+            padding: 60px 0 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -60%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(45, 106, 79, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .hero h2 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .hero h2 em {
+            font-style: normal;
+            color: var(--accent);
+            background: linear-gradient(transparent 60%, rgba(231, 111, 81, 0.15) 60%);
+        }
+
+        .hero-sub {
+            color: var(--sub);
+            font-size: 0.95rem;
+            margin-bottom: 28px;
+            line-height: 2;
+        }
+
+        .hero-speed {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.82rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 16px 44px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(231, 111, 81, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(231, 111, 81, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(231, 111, 81, 0.4)
+            }
+
+            70% {
+                box-shadow: 0 0 0 12px rgba(231, 111, 81, 0)
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(231, 111, 81, 0)
+            }
+        }
+
+        /* Section */
+        section {
+            padding: 64px 0;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--primary-bg);
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .section-title em {
+            font-style: normal;
+            color: var(--accent);
+            background: linear-gradient(transparent 60%, rgba(231, 111, 81, 0.12) 60%);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* Data */
+        .data-section {
+            background: #fff;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .data-table th {
+            background: var(--primary-bg);
+            color: var(--primary);
+            padding: 10px 8px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .data-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .data-table .school {
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .rate-high {
+            color: var(--accent);
+            font-weight: 900;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 700;
+        }
+
+        .tag-d {
+            background: #fde8e4;
+            color: var(--accent);
+        }
+
+        .tag-w {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        .data-link {
+            display: block;
+            background: linear-gradient(135deg, var(--primary-bg), #fff8e1);
+            border: 2px solid var(--primary);
+            border-radius: var(--radius);
+            padding: 18px;
+            text-decoration: none;
+            text-align: center;
+            margin: 24px 0;
+            transition: all 0.3s;
+            box-shadow: var(--shadow);
+        }
+
+        .data-link:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .data-link strong {
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .data-link span {
+            display: block;
+            color: var(--sub);
+            font-size: 0.75rem;
+            margin-top: 4px;
+        }
+
+        /* Reality */
+        .reality-section {
+            background: #fef2f2;
+        }
+
+        .reality-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-bottom: 14px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent);
+            transition: transform 0.3s;
+        }
+
+        .reality-card:hover {
+            transform: translateX(4px);
+        }
+
+        .reality-card p {
+            font-size: 0.92rem;
+        }
+
+        .reality-card strong {
+            color: var(--accent);
+        }
+
+        .reality-card .from {
+            color: var(--sub);
+            font-size: 0.75rem;
+            margin-top: 6px;
+        }
+
+        /* Comparison */
+        .compare-section {
+            background: #fff;
+        }
+
+        .fact-bubble {
+            background: var(--primary-bg);
+            border: 2px dashed var(--primary);
+            border-radius: var(--radius);
+            padding: 28px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .fact-bubble p {
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        .fact-bubble strong {
+            color: var(--accent);
+        }
+
+        .vs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .vs-box {
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .vs-box.a {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+        }
+
+        .vs-box.b {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+        }
+
+        .vs-box h4 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+        }
+
+        .vs-box.a h4 {
+            color: #2563eb;
+            border-bottom: 1px solid #bfdbfe;
+        }
+
+        .vs-box.b h4 {
+            color: var(--accent);
+            border-bottom: 1px solid #fecaca;
+        }
+
+        .vs-box ul {
+            list-style: none;
+        }
+
+        .vs-box li {
+            font-size: 0.82rem;
+            margin-bottom: 6px;
+            padding-left: 1.2em;
+            text-indent: -1.2em;
+            color: var(--sub);
+            line-height: 1.6;
+        }
+
+        .vs-box.a li::before {
+            content: '○ ';
+            color: #2563eb;
+        }
+
+        .vs-box.b li::before {
+            content: '✕ ';
+            color: var(--accent);
+        }
+
+        .vs-warn {
+            background: #fff7ed;
+            border: 2px solid var(--warm);
+            border-radius: var(--radius);
+            padding: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .vs-warn p {
+            color: #92400e;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        /* Empathy */
+        .empathy-section {
+            background: linear-gradient(135deg, #fce4ec, #fff8e1, #e8f5e9);
+            padding: 72px 0;
+        }
+
+        .empathy-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .empathy-list {
+            max-width: 440px;
+            margin: 0 auto 24px;
+        }
+
+        .empathy-item {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(4px);
+            border-radius: 30px;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            font-size: 0.92rem;
+            color: var(--text);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .empathy-resolve {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.95rem;
+            line-height: 2;
+            margin-top: 24px;
+        }
+
+        /* Method */
+        .method-section {
+            background: #fff;
+        }
+
+        .method-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            background: var(--primary-bg);
+            border: 1px solid #c8e6c9;
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 14px;
+            transition: all 0.3s;
+        }
+
+        .method-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .method-num {
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .method-card h4 {
+            color: var(--primary);
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .method-card p {
+            color: var(--sub);
+            font-size: 0.82rem;
+            line-height: 1.7;
+        }
+
+        /* Profile */
+        .profile-section {
+            background: var(--bg);
+            border-top: 1px solid var(--border);
+        }
+
+        .profile-box {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 36px;
+            max-width: 580px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 12px;
+            display: block;
+            border: 3px solid var(--primary-bg);
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .profile-role {
+            color: var(--sub);
+            font-size: 0.82rem;
+            margin-bottom: 20px;
+        }
+
+        .profile-list {
+            text-align: left;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .profile-list li {
+            color: var(--sub);
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+            padding-left: 1.6em;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .profile-list li::before {
+            content: '🏆';
+            position: absolute;
+            left: 0;
+        }
+
+        .profile-quote {
+            background: var(--primary-bg);
+            border-left: 3px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            text-align: left;
+        }
+
+        .profile-quote p {
+            color: var(--sub);
+            font-style: italic;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        /* Guarantee */
+        .guarantee-section {
+            background: linear-gradient(135deg, var(--accent), #d35f44);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .guarantee-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+        }
+
+        .guarantee-inner {
+            position: relative;
+            z-index: 2;
+        }
+
+        .guarantee-badge {
+            width: 110px;
+            height: 110px;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .guarantee-badge span {
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .guarantee-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .guarantee-desc {
+            font-size: 0.9rem;
+            opacity: 0.95;
+            line-height: 2;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: #fff;
+            border-top: 1px solid var(--border);
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 10px;
+            overflow: hidden;
+            background: #fafbfc;
+        }
+
+        .faq-q {
+            padding: 14px 18px;
+            font-weight: 700;
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.92rem;
+            transition: background 0.3s;
+        }
+
+        .faq-q:hover {
+            background: #f1f5f9;
+        }
+
+        .faq-q::after {
+            content: '＋';
+            color: var(--sub);
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-q.open::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-a {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s;
+            color: var(--sub);
+            font-size: 0.85rem;
+            line-height: 1.9;
+        }
+
+        .faq-a.open {
+            padding: 0 18px 14px;
+            max-height: 200px;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #e8f5e9, #fff8e1, #fce4ec);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .cta-title strong {
+            color: var(--accent);
+        }
+
+        .cta-sub {
+            color: var(--sub);
+            font-size: 0.92rem;
+            margin-bottom: 32px;
+            line-height: 2;
+        }
+
+        .btn-line {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #06c755;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            margin-top: 14px;
+            transition: all 0.3s;
+        }
+
+        .btn-line:hover {
+            background: #05b34c;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #fff;
+            border-top: 1px solid var(--border);
+            padding: 20px 0;
+            text-align: center;
+            color: var(--sub);
+            font-size: 0.75rem;
+        }
+
+        @media(max-width:640px) {
+            .hero h2 {
+                font-size: 1.4rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .vs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-box {
+                padding: 24px;
+            }
+
+            .cta-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">🌿 ECCベストワン藍住校</div>
+            <a href="https://forms.gle/uF6hAScSoMsTMd477" class="header-cta" target="_blank" rel="noopener">無料相談</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container center">
+                <div class="hero-tag">⚡ 2/18 出願結果 速報</div>
+                <h2>高校入試の出願先、<br>実は<em>基礎学テスト</em>で<br>決まってるんです</h2>
+                <p class="hero-sub">「まだ中1だし…」「中2だからまだ大丈夫」<br>そう思っていませんか？<br>知っておいてほしい事実があります。</p>
+                <div class="hero-speed">📊 出願結果を1日で分析しました</div>
+                <br>
+                <a href="#contact" class="btn-primary">まずは無料で相談する</a>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <div class="container">
+                <div class="section-tag center" style="display:block">📋 令和8年度 出願状況</div>
+                <h3 class="section-title center">お子さまの志望校、<br><em>今年の倍率</em>はこちら</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>学校</th>
+                            <th>学科</th>
+                            <th>募集</th>
+                            <th>出願</th>
+                            <th>倍率</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="school">鳴門渦潮</td>
+                            <td>総合</td>
+                            <td>108</td>
+                            <td>130</td>
+                            <td class="rate-high">1.20</td>
+                            <td><span class="tag tag-d">激戦</span></td>
+                        </tr>
+                        <tr>
+                            <td class="school">板野</td>
+                            <td>普通</td>
+                            <td>118</td>
+                            <td>137</td>
+                            <td class="rate-high">1.16</td>
+                            <td><span class="tag tag-d">注意</span></td>
+                        </tr>
+                        <tr>
+                            <td class="school">城北</td>
+                            <td>普通</td>
+                            <td>217</td>
+                            <td>230</td>
+                            <td class="rate-high">1.06</td>
+                            <td><span class="tag tag-w">13名超過</span></td>
+                        </tr>
+                        <tr>
+                            <td class="school">城南</td>
+                            <td>普通</td>
+                            <td>210</td>
+                            <td>220</td>
+                            <td class="rate-high">1.05</td>
+                            <td><span class="tag tag-w">10名超過</span></td>
+                        </tr>
+                        <tr>
+                            <td class="school">徳島市立</td>
+                            <td>普通</td>
+                            <td>248</td>
+                            <td>255</td>
+                            <td>1.03</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="school">徳島北</td>
+                            <td>普通</td>
+                            <td>214</td>
+                            <td>216</td>
+                            <td>1.01</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="school">城東</td>
+                            <td>普通</td>
+                            <td>251</td>
+                            <td>243</td>
+                            <td>0.97</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="color:var(--sub);font-size:0.7rem;margin-top:4px;">出典：徳島県教育委員会（R8年2月18日時点・志願変更前）</p>
+                <a href="https://r8-tokushima-high-school-entrance-e.vercel.app/" class="data-link" target="_blank"
+                    rel="noopener">
+                    <strong>📍 全校の出願状況＆詳細分析を見る →</strong>
+                    <span>徳島市・鳴門・板野エリアの学校別分析も公開中</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="reality-section">
+            <div class="container">
+                <div class="section-tag">💬 毎年の声</div>
+                <h3 class="section-title">こんな経験、<br><em>してほしくない</em>から</h3>
+                <div class="reality-card">
+                    <p>「行きたい高校があったのに、<strong>基礎学テストの点が足りなくて出願できなかった</strong>」</p>
+                    <div class="from">── 毎年の受験生の声</div>
+                </div>
+                <div class="reality-card">
+                    <p>「三者面談で<strong>志望校を変えるよう言われた</strong>。子どもの夢を応援したかったのに…」</p>
+                    <div class="from">── 中3保護者の声</div>
+                </div>
+                <div class="reality-card">
+                    <p>「定期テストは良かったのに<strong>基礎学テストで急に下がった</strong>。何が違うの？」</p>
+                    <div class="from">── 多くの保護者が感じる疑問</div>
+                </div>
+                <div class="reality-card">
+                    <p>「<strong>もっと早く対策していれば</strong>と、何度も思いました」</p>
+                    <div class="from">── 昨年の受験生保護者</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compare-section">
+            <div class="container">
+                <div class="section-tag center" style="display:block">🔍 知ってほしい事実</div>
+                <h3 class="section-title center">出願先を決めるのは<br>入試本番じゃなくて<br><em>基礎学テスト</em>なんです</h3>
+                <div class="fact-bubble">
+                    <p>中3で<strong>3回</strong>実施される基礎学テスト。<br>この結果で「出願できる高校」が決まります。<br>つまり入試の<strong>半年以上前</strong>に勝負は決まっている！
+                    </p>
+                </div>
+                <h3 class="section-title center" style="margin-top:48px;">定期テストの勉強法だけでは<br><em>太刀打ちできません</em></h3>
+                <div class="vs-grid">
+                    <div class="vs-box a">
+                        <h4>📝 定期テスト</h4>
+                        <ul>
+                            <li>範囲がせまい（1〜2ヶ月分）</li>
+                            <li>暗記中心で対応できる</li>
+                            <li>平均点が高めに設計</li>
+                            <li>教科書の問題中心</li>
+                        </ul>
+                    </div>
+                    <div class="vs-box b">
+                        <h4>📊 基礎学テスト</h4>
+                        <ul>
+                            <li>中1〜中3の全範囲</li>
+                            <li>応用力・思考力が必要</li>
+                            <li>平均点がぐっと低い</li>
+                            <li>初見の問題が多い</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vs-warn">
+                    <p>⚠ 定期テスト80点でも、基礎学テストは50点台…<br>「よくある話」なんです</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="empathy-section">
+            <div class="container center">
+                <div class="empathy-icon">🤝</div>
+                <h3 class="section-title">その気持ち、<br><em>よくわかります</em></h3>
+                <div class="empathy-list">
+                    <div class="empathy-item">💭「うちの子は大丈夫かな…」</div>
+                    <div class="empathy-item">💭「今の勉強法で本当にいいの？」</div>
+                    <div class="empathy-item">💭「塾って必要？でもどこがいい？」</div>
+                    <div class="empathy-item">💭「受験ってまだ先のこと…だよね？」</div>
+                </div>
+                <p class="empathy-resolve">10年以上、この地域の子どもたちと<br>一緒に走り続けてきたからこそ、<br>伝えられることがあります 🌱</p>
+            </div>
+        </section>
+
+        <section class="method-section">
+            <div class="container">
+                <div class="section-tag">✨ わたしたちの対策</div>
+                <h3 class="section-title">基礎学テストで勝つための<br><em>3つの柱</em></h3>
+                <div class="method-card">
+                    <div class="method-num">1</div>
+                    <div>
+                        <h4>逆算カリキュラム</h4>
+                        <p>10月の基礎学テストから逆算して、夏までに何を仕上げるか明確に。お子さま一人ひとりに合わせた学習計画をつくります。</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">2</div>
+                    <div>
+                        <h4>AI弱点分析アプリ</h4>
+                        <p>教室長が自ら開発した学習アプリで弱点を見える化。AIが最短の学習ルートを提案してくれます。</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">3</div>
+                    <div>
+                        <h4>基礎学テスト実戦演習</h4>
+                        <p>過去の基礎学テストを研究しつくした演習カリキュラム。「初めて見る問題」への対応力を鍛えます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <div class="container">
+                <div class="section-tag center" style="display:block">👨‍🏫 こんな人が教えます</div>
+                <h3 class="section-title center">基礎学テスト対策の<br><em>「伝道師」</em>がいます</h3>
+                <div class="profile-box">
+                    <img src="manager.png" alt="菊池先生" class="profile-img">
+                    <div class="profile-name">菊池 先生</div>
+                    <div class="profile-role">ECCベストワン藍住校 教室長</div>
+                    <ul class="profile-list">
+                        <li>徳島県高校入試 10年以上の指導実績</li>
+                        <li>学習アプリ開発のプロ（AI個別最適化）</li>
+                        <li>地域に根ざした大学受験指導 10年以上</li>
+                        <li>総合型選抜 3年で20以上の学部学科対策実績</li>
+                    </ul>
+                    <div class="profile-quote">
+                        <p>「基礎学テストは才能じゃなくて"戦略"です。正しいやり方を知っていれば、必ず結果はついてきます。一緒にがんばりましょう！」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guarantee-section">
+            <div class="container">
+                <div class="guarantee-inner">
+                    <div class="guarantee-badge"><span>安心の<br>保証</span></div>
+                    <h3 class="guarantee-title">月謝2ヶ月分 無料保証</h3>
+                    <p class="guarantee-desc">成績が上がらなかった場合、<br>月謝2ヶ月分を無料にいたします。<br>それだけ、結果に自信があります 💪</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h3 class="section-title center">よくあるご質問</h3>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">Q. 中1ですが、もう対策は必要？</div>
+                    <div class="faq-a">A. はい！中1のうちから基礎を固めておくことが、中3での大きなアドバンテージになります。早い時期からコツコツ積み上げるのが一番の近道です。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">Q. 定期テストは良いのですが…</div>
+                    <div class="faq-a">A. 定期テストで高得点でも、基礎学テストでは大幅に下がるケースが非常に多いです。問題の性質が根本的に違うので、早めの対策が重要です。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">Q. 相談だけでも大丈夫ですか？</div>
+                    <div class="faq-a">A. もちろんです！お子さまの現状を一緒に分析して、アドバイスさせていただきます。入塾を強要することは一切ありません。お気軽にどうぞ。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">Q. 2ヶ月無料保証の条件は？</div>
+                    <div class="faq-a">A. 詳しい条件は無料相談時にお伝えします。お気軽にお問い合わせください。</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <h3 class="cta-title">まだ間に合います。<br><strong>今がチャンスです 🌟</strong></h3>
+                <p class="cta-sub">基礎学テストまで、まだ時間があります。<br>一人で悩まず、まずはお気軽にご相談ください。</p>
+                <a href="https://forms.gle/uF6hAScSoMsTMd477" class="btn-primary" target="_blank"
+                    rel="noopener">無料相談を予約する</a>
+                <br>
+                <a href="https://line.me/ti/p/~bestoneaizumi" class="btn-line" target="_blank" rel="noopener"><i
+                        class="fab fa-line"></i> LINEで気軽に聞いてみる</a>
+                <p style="margin-top:28px;color:var(--sub);font-size:0.8rem;">ECCベストワン藍住校<br>徳島県板野郡藍住町</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">&copy; 2026 ECC Best One Aizumi. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+        function toggleFaq(el) { const a = el.nextElementSibling; const w = el.classList.contains('open'); document.querySelectorAll('.faq-q').forEach(q => { q.classList.remove('open'); q.nextElementSibling.classList.remove('open'); }); if (!w) { el.classList.add('open'); a.classList.add('open'); } }
+        document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', function (e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth' }); }); });
+    </script>
+</body>
+
+</html>
